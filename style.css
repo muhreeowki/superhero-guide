@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body, html, :root {
+    height: 100%;
+    background-color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 16px;
+    position: absolute;
+    top: 2%;
+    width: 95vw;
+    max-width: 580px ;
+    color: white;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 1.2em;
+}
+#search-box {
+    background-color: #3a3a3a;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 1em 1.5em 2em rgba(0, 0, 0, 0.581);
+}
+
+#search-box input, button {
+    font-size: .9em;
+    outline: none;
+    border: 1px solid #a0a0a0;
+    border-radius: 0.3em;
+}
+
+#search-box input {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: .7em;
+}
+
+#search-box input:focus {
+    border-color: #fff ;
+}
+
+button {
+    background-color: #3f3f3f;
+    color: #a0a0a0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: .7em;
+}
+
+button:hover {
+    color: #1c1c1c;
+    background: #a0a0a0;
+}
+
+.hero-container {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #3a3a3a;
+    border-radius: 1.2rem;
+    display: grid;
+    box-shadow: 1em 1.5em 2em rgba(0, 0, 0, 0.581);
+    grid-template-columns: 2fr 1fr;
+}
+
+.hero {
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.3rem;
+    letter-spacing: .07rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+
+img {
+    width: 100%;
+    max-height: 530;
+    height: auto;
+    border-radius: 10px;
+}
+
+.stats {
+    position: relative;
+    top: 14%;
+    font-size: .96rem;
+    padding: 30px 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1f1f1f;
+    width: 100%;
+    border-radius: 10px ;
+    height: 400px;
+}
+
+#error {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 14px;
+    }
+    img {
+        margin: auto;
+        width: auto;
+        max-height: 20em;
+    }
+}
